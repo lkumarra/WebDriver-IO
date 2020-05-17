@@ -1,0 +1,30 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "allowJs": true,
+    "target": "es5",
+    "downlevelIteration": true,
+    "lib": ["es2017"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": false,
+    "declaration": false,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "noEmitOnError": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "outDir": "CarsGuideJs/",
+    "types": [
+      "node",
+      "@wdio/sync",
+      "@wdio/mocha-framework"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "CarsGuide/",
+  ]
+}

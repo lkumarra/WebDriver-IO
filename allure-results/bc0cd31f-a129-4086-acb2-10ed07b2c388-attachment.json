@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "./option[. = \"BMW Alpina\"]|./option[normalize-space(text()) = \"BMW Alpina\"]|./optgroup/option[. = \"BMW Alpina\"]|./optgroup/option[normalize-space(text()) = \"BMW Alpina\"]"
+}
