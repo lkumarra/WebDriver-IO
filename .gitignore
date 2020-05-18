@@ -1,3 +1,5 @@
 node_modules
 node_modules
 CarsGuideJs
+allure-results
+CarsGuide.log.*

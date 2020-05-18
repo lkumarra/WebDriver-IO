@@ -1,5 +1,6 @@
 import { Utilities } from '../../Utils/TestUtils';
 import { SearchCarsLocators } from '../Locators/CarsGuideSearchCarsLocators';
+import { LogUtils } from '../../LogManager/LogUtils';
 let utilities: Utilities = Utilities.getUtilitiesInstane();
 let searchCarsLocators: SearchCarsLocators = SearchCarsLocators.getSearchCarsLocatorsInstance();
 export class SearchCarsActions {
@@ -10,6 +11,7 @@ export class SearchCarsActions {
      */
     public selectSearchCarMake(carsMake: string) {
         utilities.selectByVisibleText(searchCarsLocators.getSerchCarsMakeDropdownLocator(), carsMake);
+        LogUtils.debugMessage("CarMake on Search car page " + carsMake + " is Selected", SearchCarsActions.name);
     }
 
     /**
@@ -18,6 +20,7 @@ export class SearchCarsActions {
      */
     public selectSerchCarModel(model: string) {
         utilities.selectByVisibleText(searchCarsLocators.getSearchCarsModelDropdownLocator(), model);
+        LogUtils.debugMessage("Car Model on Search car page " + model + " is selected", SearchCarsActions.name)
     }
 
     /**
@@ -26,6 +29,7 @@ export class SearchCarsActions {
      */
     public selectSearchCarLocation(location: string) {
         utilities.selectByVisibleText(searchCarsLocators.getSeachCarsLocationDropdownLocator(), location);
+        LogUtils.debugMessage("Car Location on Search car page " + location + " is selected", SearchCarsActions.name);
     }
 
     /**
@@ -34,6 +38,7 @@ export class SearchCarsActions {
      */
     public selectSearchCarPrice(price: string) {
         utilities.selectByVisibleText(searchCarsLocators.getSearchCarsPriceDropdwonLocator(), price);
+        LogUtils.debugMessage("Car Price on Search car page " + price + " is selectted", SearchCarsActions.name);
     }
 
     /**
@@ -41,6 +46,7 @@ export class SearchCarsActions {
      */
     public clickOnFindMyNextCar() {
         utilities.clickOnElement(searchCarsLocators.getSearchCarsSearchSubmitButtonLocator());
+        LogUtils.debugMessage("Clicked on Find MY Next Car Buttom on Search car page ", SearchCarsActions.name);
     }
 
 

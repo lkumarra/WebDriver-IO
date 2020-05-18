@@ -87,7 +87,8 @@ export class Utilities {
     public selectByVisibleText(locator: string, text: string) {
         let element: WebdriverIO.Element = this.getElementFinder(locator);
         this.elementToBeVisibleWait(element);
-        browser.pause(500);
+        let selectElement:WebdriverIO.Element = this.getElementFinder(this.getXpathByText("option", text));
+        this.elementToBeVisibleWait(selectElement);
         element.selectByVisibleText(text);
     }
 
@@ -108,7 +109,6 @@ export class Utilities {
      */
     public getXpathByText(tagName: string, text: string): string {
         let xpath: string = "//" + tagName + "[text()='" + text + "']"
-        console.log(xpath);
         return xpath;
     }
 
