@@ -5,7 +5,7 @@ export class SearchCarsLocators {
      * Return the instance of SearchCarsLocators page.
      */
     public static getSearchCarsLocatorsInstance(): SearchCarsLocators {
-        if (searchCarsLocators == null) {
+        if (searchCarsLocators === null) {
             searchCarsLocators = new SearchCarsLocators();
         }
         return searchCarsLocators;
