@@ -1,1 +1,0 @@
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/d3a5c223d9ac4593a6f36469c9d8d516)](https://www.codacy.com/manual/lkumarra/WebDriver-IO?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lkumarra/WebDriver-IO&amp;utm_campaign=Badge_Grade)
