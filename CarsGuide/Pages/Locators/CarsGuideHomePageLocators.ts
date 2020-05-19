@@ -5,7 +5,7 @@ export class HomePageLocators {
      * Return the instance of HomePageLocators page.
      */
     public static getHomePageLocatorInstance():HomePageLocators{
-        if(homePageLocators == null){
+        if(homePageLocators === null){
             homePageLocators = new HomePageLocators();
         }
         return homePageLocators;
@@ -38,7 +38,7 @@ export class HomePageLocators {
      * Return the locator of news menu on carsguide home page.
      */
     public getNewsMenuLocator(): string {
-        return this.newsMenu
+        return this.newsMenu;
     }
 
     /**

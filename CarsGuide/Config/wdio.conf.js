@@ -1,4 +1,4 @@
-import { ReportAggregator, HtmlReporter } from '@rpii/wdio-html-reporter';
+import { ReportAggregator, HtmlReporter } from "@rpii/wdio-html-reporter";
 //import {Specs} from '../TestSpecs/Specs'
 exports.config = {
     //
@@ -8,7 +8,7 @@ exports.config = {
     //
     // WebdriverIO allows it to run your tests in arbitrary locations (e.g. locally or
     // on a remote machine).
-    runner: 'local',
+    runner: "local",
     //
     // ==================
     // Specify Test Files
@@ -19,7 +19,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        'CarsGuideJs/Tests/*.js',
+        "CarsGuideJs/Tests/*.js",
     ],
     // Patterns to exclude.
     exclude: [
@@ -54,10 +54,10 @@ exports.config = {
         // 5 instances get started at a time.
         maxInstances: 5,
         //
-        browserName: 'chrome',
+        browserName: "chrome",
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
-        excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
+        excludeDriverLogs: ["*"], // pass '*' to exclude all driver session logs
         //excludeDriverLogs: ['bugreport', 'server'],
     }],
     //
@@ -67,7 +67,7 @@ exports.config = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'silent',
+    logLevel: "silent",
     //
     // Set specific log levels per logger
     // loggers:
@@ -91,7 +91,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://localhost',
+    baseUrl: "http://localhost",
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -107,7 +107,7 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['chromedriver'],
+    services: ["chromedriver"],
 
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -115,7 +115,7 @@ exports.config = {
     //
     // Make sure you have the wdio adapter package for the specific framework installed
     // before running any tests.
-    framework: 'mocha',
+    framework: "mocha",
     //
     // The number of times to retry the entire specfile when it fails as a whole
     // specFileRetries: 1,
@@ -129,9 +129,9 @@ exports.config = {
     reporters: ['spec',
         [HtmlReporter, {
             debug: true,
-            outputDir: './reports/html-reports/',
-            filename: 'report.html',
-            reportTitle: 'Test Report Title',
+            outputDir: "./reports/html-reports/",
+            filename: "report.html",
+            reportTitle: "Test Report Title",
 
             //to show the report in a browser when done
             showInBrowser: true,
@@ -153,9 +153,9 @@ exports.config = {
             // LOG: log4j.getLogger("default")
         }
         ]],
-    reporters: [['allure',
+    reporters: [["allure",
         {
-            outputDir: 'allure-results'
+            outputDir: "allure-results"
         }],
     ],
 
@@ -163,7 +163,7 @@ exports.config = {
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
     mochaOpts: {
-        ui: 'bdd',
+        ui: "bdd",
         timeout: 60000
     },
     //
@@ -319,4 +319,4 @@ exports.config = {
     */
     //onReload: function(oldSessionId, newSessionId) {
     //}
-}
+};

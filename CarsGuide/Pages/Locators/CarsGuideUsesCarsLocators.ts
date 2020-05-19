@@ -1,11 +1,11 @@
-let usedCarLocators: UsedCarLocators
+let usedCarLocators: UsedCarLocators;
 export class UsedCarLocators {
 
     /**
     * Return the instance of UsedCarLocators page.
     */
     public static getUsedCarLocatorInstance(): UsedCarLocators {
-        if (usedCarLocators == null) {
+        if (usedCarLocators === null) {
             usedCarLocators = new UsedCarLocators();
         }
         return usedCarLocators;
