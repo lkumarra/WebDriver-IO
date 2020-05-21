@@ -1,4 +1,4 @@
-let utilities: Utilities;
+let utilities: Utilities = null;
 import * as chai from 'chai';
 const expect = chai.expect;
 export class Utilities {
@@ -7,7 +7,7 @@ export class Utilities {
      * Return the instance of Utilities class.
      */
     public static getUtilitiesInstane(): Utilities {
-        if (utilities == null) {
+        if (utilities === null) {
             utilities = new Utilities();
         }
         return utilities;

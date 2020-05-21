@@ -4,14 +4,17 @@ import { SearchCarsActions } from './CarsGuideSearchCars';
 import { UsedCarAction } from './CarsGuideUsedCars';
 import { LogUtils } from '../../LogManager/LogUtils';
 let utilities: Utilities = Utilities.getUtilitiesInstane();
-let homePageLocatos: HomePageLocators = HomePageLocators.getHomePageLocatorInstance();
+let homePageLocators: HomePageLocators = HomePageLocators.getHomePageLocatorInstance();
 export class HomePageActions {
 
     /**
      * Move to buy+sell menu.
      */
     public moveToBuyAndSale() {
-        utilities.moveToElement(homePageLocatos.getBuySellMenuLocator());
+        console.log("Locator is")
+        console.log("Locator is")
+        utilities.moveToElement(homePageLocators.getBuySellMenuLocator());
+        console.log("Locator is" +homePageLocators.getBuySellMenuLocator())
         LogUtils.debugMessage("Move to Buy and sell menu", HomePageActions.name);
     }
 
@@ -19,7 +22,7 @@ export class HomePageActions {
      * Move to reviews menu.
      */
     public moveToReviews() {
-        utilities.moveToElement(homePageLocatos.getReviewsMenuLocator());
+        utilities.moveToElement(homePageLocators.getReviewsMenuLocator());
         LogUtils.debugMessage("Move to Reviews menu", HomePageActions.name);
     }
 
@@ -27,7 +30,7 @@ export class HomePageActions {
      * Move to news menu.
      */
     public moveToNews() {
-        utilities.moveToElement(homePageLocatos.getNewsMenuLocator());
+        utilities.moveToElement(homePageLocators.getNewsMenuLocator());
         LogUtils.debugMessage("Move to News Menu", HomePageActions.name);
     }
 
@@ -35,7 +38,7 @@ export class HomePageActions {
      * Move to advice menu.
      */
     public moveToAdvice() {
-        utilities.moveToElement(homePageLocatos.getAdviceMenuLocator());
+        utilities.moveToElement(homePageLocators.getAdviceMenuLocator());
         LogUtils.debugMessage("Move to Advice", HomePageActions.name);
     }
 
@@ -43,7 +46,7 @@ export class HomePageActions {
      * Move to pricing and spec menu.
      */
     public moveToPricingAndSpec() {
-        utilities.moveToElement(homePageLocatos.getPriceAndSpecMenuLocator());
+        utilities.moveToElement(homePageLocators.getPriceAndSpecMenuLocator());
         LogUtils.debugMessage("Move to Price and Spec", HomePageActions.name);
     }
 
@@ -51,7 +54,7 @@ export class HomePageActions {
      * Move to advice.
      */
     public moveToGuides() {
-        utilities.moveToElement(homePageLocatos.getGuidesMenuLocator());
+        utilities.moveToElement(homePageLocators.getGuidesMenuLocator());
         LogUtils.debugMessage("Move to Guide menu", HomePageActions.name);
     }
 
@@ -59,7 +62,7 @@ export class HomePageActions {
      * click on search cars options .
      */
     public clickOnSearchCars(): SearchCarsActions {
-        utilities.clickOnElement(homePageLocatos.getSearchCarsMenuLocator());
+        utilities.clickOnElement(homePageLocators.getSearchCarsMenuLocator());
         LogUtils.debugMessage("Clicked on search cars", HomePageActions.name);
         return new SearchCarsActions();
     }
@@ -68,7 +71,7 @@ export class HomePageActions {
      * Click on used car menu.
      */
     public clickOnUsedCars(): UsedCarAction {
-        utilities.clickOnElement(homePageLocatos.getUsedCarsMenuLocator());
+        utilities.clickOnElement(homePageLocators.getUsedCarsMenuLocator());
         LogUtils.debugMessage("Clicked on Search Cars ", HomePageActions.name);
         return new UsedCarAction();
     }

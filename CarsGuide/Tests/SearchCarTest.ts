@@ -6,7 +6,9 @@ let searchCarsActions:SearchCarsActions;
 describe('webdriver.io page', () => {
     before( ()=>{
         TestBase.getUrl('https://www.carsguide.com.au/');
+        console.log("Before ")
         homePageActions.moveToBuyAndSale();
+        console.log("Inside ")
         searchCarsActions =  homePageActions.clickOnSearchCars();
         searchCarsActions.selectSearchCarMake("BMW Alpina");
         searchCarsActions.selectSerchCarModel("B5");

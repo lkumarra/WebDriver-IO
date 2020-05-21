@@ -1,4 +1,4 @@
-let searchCarsLocators: SearchCarsLocators;
+let searchCarsLocators: SearchCarsLocators = null;
 export class SearchCarsLocators {
 
     /**

@@ -1,17 +1,17 @@
-let homePageLocators:HomePageLocators;
+let homePageLocators: HomePageLocators = null;
 export class HomePageLocators {
 
     /**
      * Return the instance of HomePageLocators page.
      */
-    public static getHomePageLocatorInstance():HomePageLocators{
-        if(homePageLocators === null){
+    public static getHomePageLocatorInstance(): HomePageLocators {
+        if (homePageLocators === null) {
             homePageLocators = new HomePageLocators();
         }
         return homePageLocators;
     }
 
-    private buySellMenu:string="//a[@data-gtm-label = 'top nav car buy and sell']";
+    private buySellMenu: string = "=buy + sell";
     private reviewsMenu: string = "=reviews";
     private newsMenu: string = "=news";
     private adviceMenu: string = "=advice";
