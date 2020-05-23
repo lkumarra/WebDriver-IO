@@ -6,7 +6,7 @@ export class LogUtils {
      * @param message Debug Message.
      * @param className Name of class.
      */
-    public static debugMessage(message: string, className: string) {
+    public static debugMessage(message: string, className: string):void {
         Log4j.Log(className).debug(message);
     }
 
@@ -15,7 +15,7 @@ export class LogUtils {
      * @param message Info Message
      * @param className Name of class
      */
-    public static infoMessage(message: string, className: string) {
+    public static infoMessage(message: string, className: string):void {
         Log4j.Log(className).info(message);
     }
 
@@ -24,7 +24,7 @@ export class LogUtils {
      * @param message Error message
      * @param className Name of class
      */
-    public static errorMessage(message: string, className: string) {
+    public static errorMessage(message: string, className: string):void {
         Log4j.Log(className).error(message);
     }
 
@@ -33,7 +33,7 @@ export class LogUtils {
      * @param message Fatal message
      * @param className Name of class
      */
-    public static fatalMessage(message: string, className: string) {
+    public static fatalMessage(message: string, className: string):void {
         Log4j.Log(className).fatal(message);
     }
 }

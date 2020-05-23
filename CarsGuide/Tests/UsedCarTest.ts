@@ -1,25 +1,26 @@
-import { TestBase } from '../TestBase/TestBase';
-import { HomePageActions } from '../Pages/Actions/CarsGuideHomePage';
-import { UsedCarAction } from '../Pages/Actions/CarsGuideUsedCars';
-let homePageActions:HomePageActions = new HomePageActions();
-let usedCarAction:UsedCarAction
-describe('webdriver.io page', () => {
-    before( ()=>{
-        TestBase.getUrl('https://www.carsguide.com.au/');
+import { TestBase, HomePageActions, UsedCarAction } from '../Libs/PagesLibs';
+import { DATA, UsedCarData } from '../Libs/DataLib';
+
+let homePageActions: HomePageActions = new HomePageActions();
+let usedCarAction: UsedCarAction
+
+describe('Used Car Page Tests', () => {
+    before(() => {
+        TestBase.getUrl(DATA.url);
         homePageActions.moveToBuyAndSale();
-        usedCarAction =  homePageActions.clickOnUsedCars();
-        usedCarAction.selectUsedCarMake("Audi");
-        usedCarAction.selectUsedCarModel("A4");
-        usedCarAction.selectUsedCarLocation("ACT - All");
-        usedCarAction.seletUsedCarPrice("$100,000");
+        usedCarAction = homePageActions.clickOnUsedCars();
+        usedCarAction.selectUsedCarMake(UsedCarData.carMake);
+        usedCarAction.selectUsedCarModel(UsedCarData.carModel);
+        usedCarAction.selectUsedCarLocation(UsedCarData.carLocation);
+        usedCarAction.seletUsedCarPrice(UsedCarData.carPrice);
         usedCarAction.clickOnFindMyNextCar();
     })
 
-    it('Verify the title ', async () => {
-        expect(browser.getTitle()).toBe("Used Audi A4 Under 100000 for Sale ACT | carsguide");
+    it('Verify the title ', () => {
+        expect(browser.getTitle()).toBe(UsedCarData.pageTitle);
     })
-    
-    after(()=>{
+
+    after(() => {
         browser.closeWindow();
     })
 

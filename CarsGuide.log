@@ -1,9 +1,10 @@
-[2020-05-21T19:16:05.980] [DEBUG] TestBase - Window is Maximize
-[2020-05-21T19:16:06.105] [DEBUG] TestBase - Cookies  are Deleted
-[2020-05-21T19:16:06.309] [DEBUG] HomePageActions - Move to Buy and sell menu
-[2020-05-21T19:16:07.098] [DEBUG] HomePageActions - Clicked on Search Cars 
-[2020-05-21T19:16:09.273] [DEBUG] UsedCarAction - Car Make on used car page Audi is selected
-[2020-05-21T19:16:09.958] [DEBUG] UsedCarAction - Car Model on Used Car Page A4 is selected
-[2020-05-21T19:16:10.249] [DEBUG] UsedCarAction - Car Location on Used Car PageACT - All is selected
-[2020-05-21T19:16:10.445] [DEBUG] UsedCarAction - Car Price on Used Car Page $100,000 is selected
-[2020-05-21T19:16:11.144] [DEBUG] UsedCarAction - Clicked on Find My Next Car Button on Used Car Page
+[2020-05-23T09:07:01.549] [DEBUG] TestBase - https://www.carsguide.com.au/is launched
+[2020-05-23T09:07:04.117] [DEBUG] TestBase - Window is Maximize
+[2020-05-23T09:07:04.762] [DEBUG] TestBase - Cookies  are Deleted
+[2020-05-23T09:07:04.948] [DEBUG] HomePageActions - Move to Buy and sell menu
+[2020-05-23T09:07:06.765] [DEBUG] HomePageActions - Clicked on Search Cars 
+[2020-05-23T09:07:10.510] [DEBUG] UsedCarAction - Car Make on used car page Audi is selected
+[2020-05-23T09:07:10.708] [DEBUG] UsedCarAction - Car Model on Used Car Page A4 is selected
+[2020-05-23T09:07:10.879] [DEBUG] UsedCarAction - Car Location on Used Car PageACT - All is selected
+[2020-05-23T09:07:11.057] [DEBUG] UsedCarAction - Car Price on Used Car Page $100,000 is selected
+[2020-05-23T09:07:11.614] [DEBUG] UsedCarAction - Clicked on Find My Next Car Button on Used Car Page

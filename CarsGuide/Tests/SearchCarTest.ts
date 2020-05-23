@@ -1,28 +1,26 @@
-import { TestBase } from '../TestBase/TestBase';
-import { HomePageActions } from '../Pages/Actions/CarsGuideHomePage';
-import { SearchCarsActions } from '../Pages/Actions/CarsGuideSearchCars';
-let homePageActions:HomePageActions = new HomePageActions();
-let searchCarsActions:SearchCarsActions;
-describe('webdriver.io page', () => {
-    before( ()=>{
-        TestBase.getUrl('https://www.carsguide.com.au/');
-        console.log("Before ")
+import { TestBase, HomePageActions, SearchCarsActions, } from '../Libs/PagesLibs';
+import { DATA, SearchCarData } from '../Libs/DataLib';
+
+let homePageActions: HomePageActions = new HomePageActions();
+let searchCarsActions: SearchCarsActions;
+
+describe('Search Car Page Tests', () => {
+    before(() => {
+        TestBase.getUrl(DATA.url);
         homePageActions.moveToBuyAndSale();
-        console.log("Inside ")
-        searchCarsActions =  homePageActions.clickOnSearchCars();
-        searchCarsActions.selectSearchCarMake("BMW Alpina");
-        searchCarsActions.selectSerchCarModel("B5");
-        searchCarsActions.selectSearchCarLocation("ACT - All");
-        searchCarsActions.selectSearchCarPrice("$100,000");
+        searchCarsActions = homePageActions.clickOnSearchCars();
+        searchCarsActions.selectSearchCarMake(SearchCarData.carMake);
+        searchCarsActions.selectSerchCarModel(SearchCarData.carModel);
+        searchCarsActions.selectSearchCarLocation(SearchCarData.carLocation);
+        searchCarsActions.selectSearchCarPrice(SearchCarData.carPrice);
         searchCarsActions.clickOnFindMyNextCar();
     })
 
-
     it('Verify the title ', () => {
-        expect(browser.getTitle()).toBe("Bmw Alpina B5 Under 100000 for Sale ACT | carsguide");
+        expect(browser.getTitle()).toBe(SearchCarData.pageTitle);
     })
-    
-    after(()=>{
+
+    after(() => {
         browser.closeWindow();
     })
 

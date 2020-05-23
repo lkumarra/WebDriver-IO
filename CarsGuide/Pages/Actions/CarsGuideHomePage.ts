@@ -1,8 +1,6 @@
-import { Utilities } from '../../Utils/TestUtils';
-import { HomePageLocators } from '../Locators/CarsGuideHomePageLocators';
-import { SearchCarsActions } from './CarsGuideSearchCars';
-import { UsedCarAction } from './CarsGuideUsedCars';
-import { LogUtils } from '../../LogManager/LogUtils';
+import { Utilities, LogUtils } from '../../Libs/UtilsLib';
+import { HomePageLocators } from '../../Libs/LocatorsLib';
+import { SearchCarsActions, UsedCarAction } from '../../Libs/PagesLibs';
 let utilities: Utilities = Utilities.getUtilitiesInstane();
 let homePageLocators: HomePageLocators = HomePageLocators.getHomePageLocatorInstance();
 export class HomePageActions {
@@ -10,18 +8,15 @@ export class HomePageActions {
     /**
      * Move to buy+sell menu.
      */
-    public moveToBuyAndSale() {
-        console.log("Locator is")
-        console.log("Locator is")
+    public moveToBuyAndSale(): void {
         utilities.moveToElement(homePageLocators.getBuySellMenuLocator());
-        console.log("Locator is" +homePageLocators.getBuySellMenuLocator())
         LogUtils.debugMessage("Move to Buy and sell menu", HomePageActions.name);
     }
 
     /**
      * Move to reviews menu.
      */
-    public moveToReviews() {
+    public moveToReviews(): void {
         utilities.moveToElement(homePageLocators.getReviewsMenuLocator());
         LogUtils.debugMessage("Move to Reviews menu", HomePageActions.name);
     }
@@ -29,7 +24,7 @@ export class HomePageActions {
     /**
      * Move to news menu.
      */
-    public moveToNews() {
+    public moveToNews(): void {
         utilities.moveToElement(homePageLocators.getNewsMenuLocator());
         LogUtils.debugMessage("Move to News Menu", HomePageActions.name);
     }
@@ -37,7 +32,7 @@ export class HomePageActions {
     /**
      * Move to advice menu.
      */
-    public moveToAdvice() {
+    public moveToAdvice(): void {
         utilities.moveToElement(homePageLocators.getAdviceMenuLocator());
         LogUtils.debugMessage("Move to Advice", HomePageActions.name);
     }
@@ -45,7 +40,7 @@ export class HomePageActions {
     /**
      * Move to pricing and spec menu.
      */
-    public moveToPricingAndSpec() {
+    public moveToPricingAndSpec(): void {
         utilities.moveToElement(homePageLocators.getPriceAndSpecMenuLocator());
         LogUtils.debugMessage("Move to Price and Spec", HomePageActions.name);
     }
@@ -53,7 +48,7 @@ export class HomePageActions {
     /**
      * Move to advice.
      */
-    public moveToGuides() {
+    public moveToGuides(): void {
         utilities.moveToElement(homePageLocators.getGuidesMenuLocator());
         LogUtils.debugMessage("Move to Guide menu", HomePageActions.name);
     }
