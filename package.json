@@ -22,7 +22,7 @@
     "just-handlebars-helpers": "1.0.16",
     "locate-chrome": "0.1.1",
     "ng-apimock": "1.4.9",
-    "npm": "6.13.4",
+    "npm": "6.14.6",
     "webdriverio": "6.1.11",
     "@wdio/cli": "6.1.11",
     "rxjs": "6.5.3",
