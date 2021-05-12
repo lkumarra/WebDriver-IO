@@ -30,7 +30,7 @@
     "typedoc": "^0.15.0",
     "typescript": "3.7.3",
     "exceljs": "3.6.1",
-    "nodemailer": "6.4.2",
+    "nodemailer": "6.4.16",
     "current-dir": "1.0.0",
     "fs": "0.0.1-security",
     "process": "^0.11.10",
