@@ -46,7 +46,7 @@
     "@wdio/jasmine-framework": "6.1.8",
     "@rpii/wdio-html-reporter": "6.0.4",
     "path": "0.12.7",
-    "moment": "2.25.3",
+    "moment": "2.29.2",
     "log4j": "1.0.0",
     "@wdio/junit-reporter": "^5.0.0",
     "@wdio/allure-reporter": "^5.0.0",
