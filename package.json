@@ -44,7 +44,7 @@
     "cucumber-html-reporter": "5.2.0",
     "cucumber-pretty": "6.0.0",
     "@wdio/jasmine-framework": "6.1.8",
-    "@rpii/wdio-html-reporter": "6.0.4",
+    "@rpii/wdio-html-reporter": "6.4.0",
     "path": "0.12.7",
     "moment": "2.25.3",
     "log4j": "1.0.0",
@@ -61,7 +61,7 @@
   "license": "ISC",
   "devDependencies": {
     "@wdio/local-runner": "^6.1.11",
-    "@wdio/mocha-framework": "^6.1.8",
+    "@wdio/mocha-framework": "^6.11.0",
     "@wdio/spec-reporter": "^6.1.9",
     "@wdio/sync": "^6.1.8",
     "chromedriver": "^81.0.0",
